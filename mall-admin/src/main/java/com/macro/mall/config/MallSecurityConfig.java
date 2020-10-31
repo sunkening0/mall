@@ -23,7 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true) //开启基于方法的安全认证机制，也就是说在web层的controller启用注解机制的安全确认
 public class MallSecurityConfig extends SecurityConfig {
 
     @Autowired
